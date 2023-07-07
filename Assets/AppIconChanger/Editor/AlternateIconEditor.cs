@@ -17,10 +17,12 @@ namespace AppIconChanger.Editor
 
             if (typed.type == AlternateIconType.AutoGenerate)
             {
+                //icon将在构建时自动调整大小
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("source"));
             }
             else
             {
+                //手动调节icon尺寸，每种px塞入一张图
                 EditorGUILayout.Space();
                 {
                     EditorGUILayout.LabelField("iPhone Notification");
